@@ -1,0 +1,96 @@
+/* Minecraft Theme CSS */
+/* Minecraft Theme CSS */
+@font-face {
+  font-family: 'Minecraft';
+  src:url('MinecraftTen-VGORe.ttf') format('truetype');
+}
+
+/* Body */
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: "Minecraft", sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+/* Form */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #1e8449;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  padding: 10px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+/* Styles for the dropdown menu */
+select#subject {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Minecraft", sans-serif;
+}
+ 

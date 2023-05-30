@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rewards Page</title>
+  <style>
+    /* Minecraft Theme CSS */
+    @font-face {
+      font-family: 'Minecraft';
+      src: url('MinecraftTen-VGORe.ttf') format('truetype');
+    }
+
+    /* Body */
+    body {
+      background-color: #333;
+      color: #fff;
+      font-family: "Minecraft", sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    /* Form */
+    .reward-form {
+      background-color: #000;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"] {
+      background-color: #1e8449;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #000;
+      padding: 10px;
+    }
+
+    .navbar-nav {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-item {
+      margin-right: 10px;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Styles for the dropdown menu */
+    select#subject {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-family: "Minecraft", sans-serif;
+    }
+
+    /* Reward Cards */
+    .reward-card {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .reward-name {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .reward-points {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">Current Page</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html">Achievements</a></li>
+      <li class="nav-item"><a class="nav-link" href="level-editor.html">Quest Ediotr</a></li>
+      <!-- <li class="nav-item"><a class="nav-link" href="task-editor.html">Quest Editor</a></li> -->
+      <li class="nav-item"><a class="nav-link" href="task-complete.html">Quest Book</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Rewards</h1>
+    <p>Your available points: <span id="points"></span></p>
+
+    <h2>Available Rewards</h2>
+    <div id="rewardsContainer"></div>
+
+    <h2>Redeemed Rewards</h2>
+    <div id="redeemedRewardsContainer"></div>
+
+    <!-- <div class="reward-form">
+      <form id="rewardForm">
+        <label for="rewardName">Reward Name:</label>
+        <input type="text" id="rewardName" required>
+        <br>
+        <label for="rewardPoints">Points:</label>
+        <input type="number" id="rewardPoints" required>
+        <br>
+        <button type="button" onclick="handleFormSubmit()">Add Reward</button>
+      </form>
+    </div> -->
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
